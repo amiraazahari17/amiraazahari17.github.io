@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>My Music</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+
+	</head>
+	<body>
+	<div id = "mainFrame" align = "center">
+	<div id="container">
+		<h1><img src="Logo.jpg" alt="logo" style="width:100px;height:60px" />My Music</h1>
+		<div class = "drop">
+		<ul class = "drop_menu">
+		<li><a href ="index.html"> Homepage </a></li>
+		<li><a href ="latestnews.html"> Latest News </a>
+		<ul>
+		<li><a href ="WhatTheTrend.html"> What`s Trending</a></li>
+		<li><a href ="latestsong.html">Latest Song</a></li>
+		</ul>
+		</li>
+		<li><a href ="channel.html"> Music Channel </a>
+		<ul>
+		<li><a href ="mymusic1.html"> Music Genre </a></li>
+		<li><a href ="singer.html"> Singer/songwriter </a></li>
+		</ul>
+		</li>
+		<li><a href ="RecommendedPlaylist.html"> Recommended Playlist </a>
+		<ul>
+		<li><a href ="workout.html"> Working Out </a></li>
+		<li><a href ="study.html"> Study </a></li>
+		<li><a href ="relax.html"> Relaxing </a></li>
+		</ul>
+		</li>
+		</ul>
+		</div>
+		<script>
+		function myFunction() {
+		var x = document.getElementById("mySearch").placeholder;
+		document.getElementById("demo").innerHTML = x;
+		}
+		</script>
+		<br>
+		<br>
+		<br>
+		<div class="slideshow-container">
+		<div class="mySlides fade">
+		<img src="backgroundimg1.jpg" alt="img1" style="width:80%;height:350px">
+		</div>
+		<div class="mySlides fade">
+		<img src="backgroundimg2.jpg" alt="img2" style="width:80%;height:350px">
+		</div>
+		<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span>  
+		</div>
+		</div>
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		</script>
+		<div id="content">
+		<div id = "formBody" style = "float:right;text-align:center;width:55%;height:700px;background-color:white">
+		<div id="article" style="border:10px solid transparent;border-image:url(mainborder.png)30 stretch;">
+		<h3>The Latest</h3>
+		<div class="mydiv">
+		<h3><img class="mydivimg" src="homepage1.jpg" alt="selenaNtaylor">
+		<a href="homepage1.html" style="text-decoration:none">Selena Gomez Reveals How She And Taylor Swift Became Best Friends</a></h3>
+		</div>
+		<div class="mydiv2">
+		<h3><img class="mydivimg2" src="backgroundimg2.jpg" alt="sam">
+		<a href="homepage2.html" style="text-decoration:none">Artist of the Month</a></h3>
+		</div>
+		<div class="mydiv3">
+		<h3><img class="mydivimg3" src="homepage2.jpg" alt="thevoice">
+		<a href="homepage3.html" style="text-decoration:none">The Voice&apos; top 10 results: Ain&apos;t no way</a></h3>
+		</div>
+		</div>
+		</div>
+		<div id="music" style="float:left;width:45%;height:700px;background-image:url(musicbackground2.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;background-color:white;">
+		<br>
+		<br>
+		<video width="460" height="330" controls autoplay>
+		<source src="Photograph.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		</div>
+		</div>
+		</div>
+	<div id = "footer" style = "background-color:#ebdef0;text-align:center">
+	<p><a href="AboutMyMusic.html" style="text-decoration:none">About My Music</a>
+	<br/><a href="contact.html" style="text-decoration:none">Contact</a> &emsp;
+	<br/>Copyright &copy; 2017 My Music Designed By Group 9
+	</div>
+	</div>
+	</body>
+</html>

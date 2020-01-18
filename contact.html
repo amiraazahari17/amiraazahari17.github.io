@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>My Music</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	
+	</head>
+	<body>
+	<div id = "mainFrame" align = "center">
+	<div id="container">
+		<h1><img src="Logo.jpg" alt="logo" style="width:100px;height:60px" />My Music</h1>
+		<div class = "drop">
+		<ul class = "drop_menu">
+		<li><a href ="index.html"> Homepage </a></li>
+		<li><a href ="latestnews.html"> Latest News </a>
+		<ul>
+		<li><a href ="WhatTheTrend.html"> What`s Trending</a></li>
+		<li><a href ="latestsong.html">Latest Song</a></li>
+		</ul>
+		</li>
+		<li><a href ="channel.html"> Music Channel </a>
+		<ul>
+		<li><a href ="mymusic1.html"> Music Genre </a></li>
+		<li><a href ="singer.html"> Singer/songwriter </a></li>
+		</ul>
+		</li>
+		<li><a href ="RecommendedPlaylist.html"> Recommended Playlist </a>
+		<ul>
+		<li><a href ="workout.html"> Working Out </a></li>
+		<li><a href ="study.html"> Study </a></li>
+		<li><a href ="relax.html"> Relaxing </a></li>
+		</ul>
+		</li>
+		</ul>
+		</div>
+		<h2>Contact Form</h2>
+<div id="contact">
+  <form id="fm" action="get" style="border-radius: 5px;background-color: #f2f2f2;padding: 20px;width: 800px; height:500px;text-align:left;">
+    <label for="fname">First Name </label> &nbsp;
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	<br>
+    <label for="lname">Last Name </label> &nbsp;
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	<br>
+    <label for="country">Country </label> &nbsp;
+    <select id="country" name="country">
+      <option value="Malaysia">Malaysia</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Thailand">Thailand</option>
+	  <option value="Indonesia">Indonesia</option>
+    </select>
+	<br>
+    <label for="subject">Subject</label>
+	<br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:300px;width:800px"></textarea>
+	<br>
+	</form>
+	<script>
+	function clickAlert() {
+    alert("Thank you for your feedback");
+	}
+	</script>
+	<input type="button" onclick="clickAlert()" value="Submit">
+	
+</div>
+	<div id = "footer" style = "background-color:#ebdef0;text-align:center">
+	<p><a href="AboutMyMusic.html" style="text-decoration:none">About My Music</a>
+	<br/><a href="contact.html" style="text-decoration:none">Contact</a> &emsp;
+	<br/>Copyright &copy; 2017 My Music Designed By Group 9
+	</div>
+	</div>
+	</div>
+	</body>
+</html>
